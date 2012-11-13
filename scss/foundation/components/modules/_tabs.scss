@@ -52,6 +52,10 @@
     &.three-up dt, &.three-up dd, &.two-up li  { width: 33.33%; }
     &.four-up dt, &.four-up dd, &.two-up li    { width: 25%; }
     &.five-up dt, &.five-up dd, &.two-up li    { width: 20%; }
+    &.one-up {
+      @extend .two-up;
+    }
+    &.one-up dt, &.one-up dd, &.one-up li { width: 100% }
   }
 
   ul.tabs-content { display: block; margin: 0 0 20px; padding: 0;
